@@ -1,0 +1,18 @@
+version: 2
+
+exposures:
+  - name: executive_dashboard
+    label: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://8a1e0b8a.us1a.app.preset.io/superset/dashboard/8/?edit=true&native_filters_key=J5JiMrXElNCemPYArockvlNVLQnOYcBB3DX_J2rPUucOZ2Ki4vtypBiOHrTNi8gF
+    description: Executive Dashboard about Airbnb listings and hosts
+      
+
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('mart_full_moon_reviews')
+
+    owner:
+      name: Abdul Haseeb Mohammed
+      email: abdulhaseeb.cse@gmail.com
